@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Test2FXML.jnlp">
+  <information>
+    <title>Test2FXML</title>
+    <vendor>ahmed</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Test2FXML.jar" size="17487" download="eager" />
+    <jar href="lib\jssc-2.8.0.jar" size="153562" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="test2fxml.Test2FXML"  name="Test2FXML" />
+  <update check="always"/>
+</jnlp>

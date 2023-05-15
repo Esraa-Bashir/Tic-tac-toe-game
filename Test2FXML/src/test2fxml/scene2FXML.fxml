@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckMenuItem?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane id="AnchorPane" fx:id="Pane_scene2" prefHeight="516.0" prefWidth="665.0" style="-fx-background-color: #00CED1;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test2fxml.Scene2FXMLController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#93ab9800" height="351.0" layoutX="298.0" layoutY="44.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="OUTSIDE" width="170.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#93ab9800" focusTraversable="true" height="352.0" layoutX="477.0" layoutY="44.0" stroke="BLACK" strokeLineCap="ROUND" width="172.0" />
+      <Button fx:id="button0" alignment="CENTER" layoutX="31.0" layoutY="93.0" onAction="#Button_Press" prefHeight="77.0" prefWidth="80.0" style="-fx-font-size: 35; -fx-font-weight: bold;" textAlignment="JUSTIFY" wrapText="true">
+         <effect>
+            <Blend />
+         </effect>
+      </Button>
+      <Button fx:id="button1" alignment="CENTER" layoutX="31.0" layoutY="170.0" prefHeight="77.0" prefWidth="80.0" style="-fx-font-size: 35; -fx-font-weight: bold;" textAlignment="JUSTIFY" wrapText="true">
+         <effect>
+            <Blend />
+         </effect>
+      </Button>
+      <Button fx:id="button2" alignment="CENTER" layoutX="31.0" layoutY="247.0" prefHeight="77.0" prefWidth="80.0" style="-fx-font-size: 35; -fx-font-weight: bold;" textAlignment="JUSTIFY" wrapText="true">
+         <effect>
+            <Blend />
+         </effect>
+      </Button>
+      <Button fx:id="button3" alignment="CENTER" layoutX="112.0" layoutY="93.0" prefHeight="77.0" prefWidth="80.0" style="-fx-font-size: 35; -fx-font-weight: bold;" textAlignment="JUSTIFY" wrapText="true">
+         <effect>
+            <Blend />
+         </effect>
+      </Button>
+      <Button fx:id="button4" alignment="CENTER" layoutX="111.0" layoutY="170.0" prefHeight="77.0" prefWidth="80.0" style="-fx-font-size: 35; -fx-font-weight: bold;" textAlignment="JUSTIFY" wrapText="true">
+         <effect>
+            <Blend />
+         </effect>
+      </Button>
+      <Button fx:id="button5" alignment="CENTER" layoutX="111.0" layoutY="247.0" prefHeight="77.0" prefWidth="80.0" style="-fx-font-size: 35; -fx-font-weight: bold;" textAlignment="JUSTIFY" wrapText="true">
+         <effect>
+            <Blend />
+         </effect>
+      </Button>
+      <Button fx:id="button6" alignment="CENTER" layoutX="191.0" layoutY="93.0" prefHeight="77.0" prefWidth="80.0" style="-fx-font-size: 35; -fx-font-weight: bold;" textAlignment="JUSTIFY" wrapText="true">
+         <effect>
+            <Blend />
+         </effect>
+      </Button>
+      <Button fx:id="button7" alignment="CENTER" layoutX="191.0" layoutY="170.0" prefHeight="77.0" prefWidth="80.0" style="-fx-font-size: 35; -fx-font-weight: bold;" textAlignment="JUSTIFY" wrapText="true">
+         <effect>
+            <Blend />
+         </effect>
+      </Button>
+      <Button fx:id="button8" alignment="CENTER" layoutX="191.0" layoutY="247.0" prefHeight="77.0" prefWidth="80.0" style="-fx-font-size: 35; -fx-font-weight: bold;" textAlignment="JUSTIFY" wrapText="true">
+         <effect>
+            <Blend />
+         </effect>
+      </Button>
+      <MenuBar prefHeight="27.0" prefWidth="677.0">
+         <menus>
+            <Menu fx:id="Main_menu" mnemonicParsing="false" text="Settings">
+               <items>
+                  <CheckMenuItem mnemonicParsing="false" onAction="#Click_Sound_check" text="Sound">
+                     <accelerator>
+                        <KeyCodeCombination alt="ANY" code="Z" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </CheckMenuItem>
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem fx:id="About_B" mnemonicParsing="false" onAction="#About_Button" text="About">
+                     <accelerator>
+                        <KeyCodeCombination alt="ANY" code="I" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Label alignment="CENTER" layoutX="327.0" layoutY="199.0" prefHeight="42.0" prefWidth="102.0" style="-fx-font-size: 15; -fx-font-weight: bold;" text="Player 1" />
+      <Label fx:id="Player2_Label" alignment="CENTER" layoutX="522.0" layoutY="199.0" prefHeight="42.0" prefWidth="87.0" style="-fx-font-size: 15; -fx-font-weight: bold;" text="Player 2" />
+      <ImageView fitHeight="100.0" fitWidth="87.0" layoutX="335.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Esraa%20Beshir/Downloads/project/Player1.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="oTf" alignment="CENTER" editable="false" layoutX="515.0" layoutY="246.0" prefHeight="25.0" prefWidth="102.0" text="0">
+         <effect>
+            <Glow />
+         </effect>
+      </TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="327.0" layoutY="246.0" prefHeight="25.0" prefWidth="102.0" text="0" fx:id="xTf">
+         <effect>
+            <Glow />
+         </effect>
+      </TextField>
+      <TextField fx:id="Winner_Tf" editable="false" layoutX="29.0" layoutY="362.0" prefHeight="42.0" prefWidth="245.0" />
+      <ImageView fitHeight="100.0" fitWidth="87.0" layoutX="528.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Esraa%20Beshir/Downloads/project/Player22.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="31.0" layoutY="433.0" mnemonicParsing="false" onAction="#StartNewGameAction" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: linear-gradient(#ff5400, #be1d00);; -fx-background-insets: 0; -fx-background-radius: 30; -fx-text-fill: white;" text="Start New Game" />
+      <Button layoutX="132.0" layoutY="433.0" mnemonicParsing="false" onAction="#VsMario" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: linear-gradient(#ff5400, #be1d00);; -fx-background-insets: 0; -fx-background-radius: 30; -fx-text-fill: white;" text="1 vs Mario" />
+      <Button layoutX="231.0" layoutY="433.0" mnemonicParsing="false" onAction="#ResetAction" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: linear-gradient(#ff5400, #be1d00);; -fx-background-insets: 0; -fx-background-radius: 30; -fx-text-fill: white;" text="Reset" />
+      <Button layoutX="132.0" layoutY="477.0" mnemonicParsing="false" onAction="#ExitAction" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: linear-gradient(#ff5400, #be1d00);; -fx-background-insets: 0; -fx-background-radius: 30; -fx-text-fill: white;" text="Exit" />
+      <ImageView fitHeight="89.0" fitWidth="129.0" layoutX="339.0" layoutY="298.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Esraa%20Beshir/Downloads/project/X-Letter-PNG-High-Quality-Image.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="89.0" layoutX="522.0" layoutY="294.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Esraa%20Beshir/Downloads/project/O-Letter.png" />
+         </image>
+      </ImageView>
+      <Line endX="-23.0" endY="230.0" layoutX="134.0" layoutY="112.0" startX="-23.0" startY="-37.0" />
+      <Line endX="-23.0" endY="230.0" layoutX="214.0" layoutY="112.0" startX="-23.0" startY="-37.0" />
+      <Line endX="120.0" layoutX="158.0" layoutY="170.0" startX="-139.0" />
+      <Line endX="120.0" layoutX="164.0" layoutY="247.0" startX="-144.0" />
+      <DialogPane fx:id="Mariogif" layoutX="288.0" layoutY="283.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="480.0" visible="false">
+          <header>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="302.0" prefWidth="480.0" visible="false">
+               <children>
+                  <ImageView fitHeight="250.0" fitWidth="260.0" layoutX="110.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@../../../MarioWin.gif" />
+                     </image>
+                  </ImageView>
+                  <DialogPane fx:id="luigigif" layoutX="-3.0" layoutY="1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="480.0" visible="false">
+                     <expandableContent>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="320.0" />
+                     </expandableContent>
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="235.0" prefWidth="480.0" />
+                     </content>
+                     <header>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="302.0" prefWidth="480.0">
+                           <children>
+                              <ImageView fitHeight="248.0" fitWidth="328.0" layoutX="81.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="file:/D:/temp/LuigiWin.gif" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </header>
+                  </DialogPane>
+               </children>
+            </AnchorPane>
+          </header>
+          <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="235.0" prefWidth="480.0" />
+          </content>
+          <expandableContent>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="320.0" />
+          </expandableContent>
+      </DialogPane>
+   </children>
+</AnchorPane>
